@@ -1,0 +1,1439 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="moments/SquaredDifference" out_port_id="0"/>
+		<IR id="14" name="moments/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Pad_3" out_port_id="0"/>
+		<IR id="83" name="MirrorPad_1" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MirrorPad_1" out_port_id="0"/>
+		<IR id="83" name="MirrorPad_1" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="input.1" out_port_id="0"/>
+		<IR id="0" name="input.1" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="Pad" out_port_id="0"/>
+		<IR id="1" name="MirrorPad" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MirrorPad" out_port_id="0"/>
+		<IR id="1" name="MirrorPad" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat" out_port_id="0"/>
+		<IR id="3" name="convolution/Permute_2234" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution" out_port_id="0"/>
+		<IR id="3" name="convolution/Permute_2234" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add" out_port_id="0"/>
+		<IR id="7" name="Add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="moments/mean" out_port_id="0"/>
+		<IR id="9" name="moments/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments/variance" out_port_id="0"/>
+		<IR id="15" name="moments/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm/add" out_port_id="0"/>
+		<IR id="16" name="instancenorm/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm/Rsqrt" out_port_id="0"/>
+		<IR id="17" name="instancenorm/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm/mul" out_port_id="0"/>
+		<IR id="18" name="instancenorm/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm/mul_1" out_port_id="0"/>
+		<IR id="21" name="instancenorm/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm/sub" out_port_id="0"/>
+		<IR id="24" name="instancenorm/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm/add_1" out_port_id="0"/>
+		<IR id="27" name="instancenorm/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Relu" out_port_id="0"/>
+		<IR id="28" name="Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_1" out_port_id="0"/>
+		<IR id="30" name="convolution_1/Permute_2286" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_1" out_port_id="0"/>
+		<IR id="30" name="convolution_1/Permute_2286" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_1" out_port_id="0"/>
+		<IR id="34" name="Add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="moments_1/mean" out_port_id="0"/>
+		<IR id="36" name="moments_1/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_1/SquaredDifference" out_port_id="0"/>
+		<IR id="41" name="moments_1/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_1/variance" out_port_id="0"/>
+		<IR id="42" name="moments_1/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_1/add" out_port_id="0"/>
+		<IR id="43" name="instancenorm_1/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_1/Rsqrt" out_port_id="0"/>
+		<IR id="44" name="instancenorm_1/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_1/mul" out_port_id="0"/>
+		<IR id="45" name="instancenorm_1/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_1/mul_1" out_port_id="0"/>
+		<IR id="48" name="instancenorm_1/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_1/sub" out_port_id="0"/>
+		<IR id="51" name="instancenorm_1/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_1/add_1" out_port_id="0"/>
+		<IR id="54" name="instancenorm_1/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Relu_1" out_port_id="0"/>
+		<IR id="55" name="Relu_1" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_2" out_port_id="0"/>
+		<IR id="57" name="convolution_2/Permute_2322" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_2" out_port_id="0"/>
+		<IR id="57" name="convolution_2/Permute_2322" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_2" out_port_id="0"/>
+		<IR id="61" name="Add_2" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="transpose_8" out_port_id="0"/>
+		<IR id="62" name="transpose_8" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_2/mean" out_port_id="0"/>
+		<IR id="63" name="moments_2/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_2/SquaredDifference" out_port_id="0"/>
+		<IR id="68" name="moments_2/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_2/variance" out_port_id="0"/>
+		<IR id="69" name="moments_2/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_2/add" out_port_id="0"/>
+		<IR id="70" name="instancenorm_2/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_2/Rsqrt" out_port_id="0"/>
+		<IR id="71" name="instancenorm_2/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_2/mul" out_port_id="0"/>
+		<IR id="72" name="instancenorm_2/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_2/mul_1" out_port_id="0"/>
+		<IR id="75" name="instancenorm_2/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_2/sub" out_port_id="0"/>
+		<IR id="78" name="instancenorm_2/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_2/add_1" out_port_id="0"/>
+		<IR id="81" name="instancenorm_2/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Relu_2" out_port_id="0"/>
+		<IR id="82" name="Relu_2" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_3" out_port_id="0"/>
+		<IR id="85" name="convolution_3/Permute_2318" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_3" out_port_id="0"/>
+		<IR id="85" name="convolution_3/Permute_2318" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_3" out_port_id="0"/>
+		<IR id="89" name="Add_3" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="moments_3/mean" out_port_id="0"/>
+		<IR id="91" name="moments_3/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_3/SquaredDifference" out_port_id="0"/>
+		<IR id="96" name="moments_3/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_3/variance" out_port_id="0"/>
+		<IR id="97" name="moments_3/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_3/add" out_port_id="0"/>
+		<IR id="98" name="instancenorm_3/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_3/Rsqrt" out_port_id="0"/>
+		<IR id="99" name="instancenorm_3/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_3/mul" out_port_id="0"/>
+		<IR id="100" name="instancenorm_3/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_3/mul_1" out_port_id="0"/>
+		<IR id="103" name="instancenorm_3/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_3/sub" out_port_id="0"/>
+		<IR id="106" name="instancenorm_3/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_3/add_1" out_port_id="0"/>
+		<IR id="109" name="instancenorm_3/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Relu_3" out_port_id="0"/>
+		<IR id="110" name="Relu_3" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Pad_4" out_port_id="0"/>
+		<IR id="111" name="MirrorPad_2" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MirrorPad_2" out_port_id="0"/>
+		<IR id="111" name="MirrorPad_2" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_4" out_port_id="0"/>
+		<IR id="113" name="convolution_4/Permute_2254" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_4" out_port_id="0"/>
+		<IR id="113" name="convolution_4/Permute_2254" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_4" out_port_id="0"/>
+		<IR id="117" name="Add_4" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="transpose_14" out_port_id="0"/>
+		<IR id="118" name="transpose_14" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_4/mean" out_port_id="0"/>
+		<IR id="119" name="moments_4/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_4/SquaredDifference" out_port_id="0"/>
+		<IR id="124" name="moments_4/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_4/variance" out_port_id="0"/>
+		<IR id="125" name="moments_4/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_4/add" out_port_id="0"/>
+		<IR id="126" name="instancenorm_4/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_4/Rsqrt" out_port_id="0"/>
+		<IR id="127" name="instancenorm_4/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_4/mul" out_port_id="0"/>
+		<IR id="128" name="instancenorm_4/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_4/mul_1" out_port_id="0"/>
+		<IR id="131" name="instancenorm_4/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_4/sub" out_port_id="0"/>
+		<IR id="134" name="instancenorm_4/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_4/add_1" out_port_id="0"/>
+		<IR id="137" name="instancenorm_4/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Add_5" out_port_id="0"/>
+		<IR id="138" name="Add_5" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Pad_5" out_port_id="0"/>
+		<IR id="139" name="MirrorPad_3" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MirrorPad_3" out_port_id="0"/>
+		<IR id="139" name="MirrorPad_3" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_5" out_port_id="0"/>
+		<IR id="141" name="convolution_5/Permute_2274" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_5" out_port_id="0"/>
+		<IR id="141" name="convolution_5/Permute_2274" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_5/mean" out_port_id="0"/>
+		<IR id="147" name="moments_5/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_5/SquaredDifference" out_port_id="0"/>
+		<IR id="152" name="moments_5/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_5/variance" out_port_id="0"/>
+		<IR id="153" name="moments_5/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_5/add" out_port_id="0"/>
+		<IR id="154" name="instancenorm_5/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_5/Rsqrt" out_port_id="0"/>
+		<IR id="155" name="instancenorm_5/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_5/mul" out_port_id="0"/>
+		<IR id="156" name="instancenorm_5/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_5/mul_1" out_port_id="0"/>
+		<IR id="159" name="instancenorm_5/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_5/sub" out_port_id="0"/>
+		<IR id="162" name="instancenorm_5/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_5/add_1" out_port_id="0"/>
+		<IR id="165" name="instancenorm_5/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Relu_4" out_port_id="0"/>
+		<IR id="166" name="Relu_4" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Pad_6" out_port_id="0"/>
+		<IR id="167" name="MirrorPad_4" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MirrorPad_4" out_port_id="0"/>
+		<IR id="167" name="MirrorPad_4" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_6" out_port_id="0"/>
+		<IR id="169" name="convolution_6/Permute_2238" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_6" out_port_id="0"/>
+		<IR id="169" name="convolution_6/Permute_2238" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_7" out_port_id="0"/>
+		<IR id="173" name="Add_7" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="transpose_20" out_port_id="0"/>
+		<IR id="174" name="transpose_20" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_6/mean" out_port_id="0"/>
+		<IR id="175" name="moments_6/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_6/SquaredDifference" out_port_id="0"/>
+		<IR id="180" name="moments_6/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_6/variance" out_port_id="0"/>
+		<IR id="181" name="moments_6/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_6/add" out_port_id="0"/>
+		<IR id="182" name="instancenorm_6/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_6/Rsqrt" out_port_id="0"/>
+		<IR id="183" name="instancenorm_6/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_6/mul" out_port_id="0"/>
+		<IR id="184" name="instancenorm_6/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_6/mul_1" out_port_id="0"/>
+		<IR id="187" name="instancenorm_6/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_6/sub" out_port_id="0"/>
+		<IR id="190" name="instancenorm_6/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_6/add_1" out_port_id="0"/>
+		<IR id="193" name="instancenorm_6/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Add_8" out_port_id="0"/>
+		<IR id="194" name="Add_8" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Pad_7" out_port_id="0"/>
+		<IR id="195" name="MirrorPad_5" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MirrorPad_5" out_port_id="0"/>
+		<IR id="195" name="MirrorPad_5" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_7" out_port_id="0"/>
+		<IR id="197" name="convolution_7/Permute_2290" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_7" out_port_id="0"/>
+		<IR id="197" name="convolution_7/Permute_2290" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_9" out_port_id="0"/>
+		<IR id="201" name="Add_9" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="moments_7/mean" out_port_id="0"/>
+		<IR id="203" name="moments_7/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_7/SquaredDifference" out_port_id="0"/>
+		<IR id="208" name="moments_7/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_7/variance" out_port_id="0"/>
+		<IR id="209" name="moments_7/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_7/add" out_port_id="0"/>
+		<IR id="210" name="instancenorm_7/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_7/Rsqrt" out_port_id="0"/>
+		<IR id="211" name="instancenorm_7/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_7/mul" out_port_id="0"/>
+		<IR id="212" name="instancenorm_7/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_7/mul_1" out_port_id="0"/>
+		<IR id="215" name="instancenorm_7/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_7/sub" out_port_id="0"/>
+		<IR id="218" name="instancenorm_7/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_7/add_1" out_port_id="0"/>
+		<IR id="221" name="instancenorm_7/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Relu_5" out_port_id="0"/>
+		<IR id="222" name="Relu_5" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Pad_8" out_port_id="0"/>
+		<IR id="223" name="MirrorPad_6" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MirrorPad_6" out_port_id="0"/>
+		<IR id="223" name="MirrorPad_6" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_8" out_port_id="0"/>
+		<IR id="225" name="convolution_8/Permute_2242" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_8" out_port_id="0"/>
+		<IR id="225" name="convolution_8/Permute_2242" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_10" out_port_id="0"/>
+		<IR id="229" name="Add_10" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="transpose_26" out_port_id="0"/>
+		<IR id="230" name="transpose_26" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_8/mean" out_port_id="0"/>
+		<IR id="231" name="moments_8/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_8/SquaredDifference" out_port_id="0"/>
+		<IR id="236" name="moments_8/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_8/variance" out_port_id="0"/>
+		<IR id="237" name="moments_8/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_8/add" out_port_id="0"/>
+		<IR id="238" name="instancenorm_8/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_8/Rsqrt" out_port_id="0"/>
+		<IR id="239" name="instancenorm_8/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_8/mul" out_port_id="0"/>
+		<IR id="240" name="instancenorm_8/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_8/mul_1" out_port_id="0"/>
+		<IR id="243" name="instancenorm_8/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_8/sub" out_port_id="0"/>
+		<IR id="246" name="instancenorm_8/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_8/add_1" out_port_id="0"/>
+		<IR id="249" name="instancenorm_8/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Add_11" out_port_id="0"/>
+		<IR id="250" name="Add_11" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Pad_9" out_port_id="0"/>
+		<IR id="251" name="MirrorPad_7" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MirrorPad_7" out_port_id="0"/>
+		<IR id="251" name="MirrorPad_7" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_9" out_port_id="0"/>
+		<IR id="253" name="convolution_9/Permute_2266" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_9" out_port_id="0"/>
+		<IR id="253" name="convolution_9/Permute_2266" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_12" out_port_id="0"/>
+		<IR id="257" name="Add_12" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="transpose_29" out_port_id="0"/>
+		<IR id="258" name="transpose_29" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_9/mean" out_port_id="0"/>
+		<IR id="259" name="moments_9/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_9/SquaredDifference" out_port_id="0"/>
+		<IR id="264" name="moments_9/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_9/variance" out_port_id="0"/>
+		<IR id="265" name="moments_9/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_9/add" out_port_id="0"/>
+		<IR id="266" name="instancenorm_9/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_9/Rsqrt" out_port_id="0"/>
+		<IR id="267" name="instancenorm_9/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_9/mul_1" out_port_id="0"/>
+		<IR id="271" name="instancenorm_9/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_9/sub" out_port_id="0"/>
+		<IR id="274" name="instancenorm_9/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_9/add_1" out_port_id="0"/>
+		<IR id="277" name="instancenorm_9/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Relu_6" out_port_id="0"/>
+		<IR id="278" name="Relu_6" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Pad_10" out_port_id="0"/>
+		<IR id="279" name="MirrorPad_8" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MirrorPad_8" out_port_id="0"/>
+		<IR id="279" name="MirrorPad_8" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_10" out_port_id="0"/>
+		<IR id="281" name="convolution_10/Permute_2282" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_10" out_port_id="0"/>
+		<IR id="281" name="convolution_10/Permute_2282" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_13" out_port_id="0"/>
+		<IR id="285" name="Add_13" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="moments_10/mean" out_port_id="0"/>
+		<IR id="287" name="moments_10/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_10/SquaredDifference" out_port_id="0"/>
+		<IR id="292" name="moments_10/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_10/variance" out_port_id="0"/>
+		<IR id="293" name="moments_10/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_10/add" out_port_id="0"/>
+		<IR id="294" name="instancenorm_10/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_10/Rsqrt" out_port_id="0"/>
+		<IR id="295" name="instancenorm_10/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_10/mul" out_port_id="0"/>
+		<IR id="296" name="instancenorm_10/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_10/mul_1" out_port_id="0"/>
+		<IR id="299" name="instancenorm_10/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_10/sub" out_port_id="0"/>
+		<IR id="302" name="instancenorm_10/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_10/add_1" out_port_id="0"/>
+		<IR id="305" name="instancenorm_10/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Add_14" out_port_id="0"/>
+		<IR id="306" name="Add_14" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="concat_11" out_port_id="0"/>
+		<IR id="309" name="convolution_11/Permute_2298" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_11" out_port_id="0"/>
+		<IR id="309" name="convolution_11/Permute_2298" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_15" out_port_id="0"/>
+		<IR id="313" name="Add_15" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="moments_11/mean" out_port_id="0"/>
+		<IR id="315" name="moments_11/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_11/SquaredDifference" out_port_id="0"/>
+		<IR id="320" name="moments_11/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_11/variance" out_port_id="0"/>
+		<IR id="321" name="moments_11/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_11/add" out_port_id="0"/>
+		<IR id="322" name="instancenorm_11/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_11/Rsqrt" out_port_id="0"/>
+		<IR id="323" name="instancenorm_11/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_11/mul" out_port_id="0"/>
+		<IR id="324" name="instancenorm_11/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_11/mul_1" out_port_id="0"/>
+		<IR id="327" name="instancenorm_11/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_11/sub" out_port_id="0"/>
+		<IR id="330" name="instancenorm_11/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_11/add_1" out_port_id="0"/>
+		<IR id="333" name="instancenorm_11/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Relu_7" out_port_id="0"/>
+		<IR id="334" name="Relu_7" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_12" out_port_id="0"/>
+		<IR id="337" name="convolution_12/Permute_2262" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_12" out_port_id="0"/>
+		<IR id="337" name="convolution_12/Permute_2262" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_16" out_port_id="0"/>
+		<IR id="341" name="Add_16" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="transpose_38" out_port_id="0"/>
+		<IR id="342" name="transpose_38" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_12/mean" out_port_id="0"/>
+		<IR id="343" name="moments_12/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_12/SquaredDifference" out_port_id="0"/>
+		<IR id="348" name="moments_12/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_12/variance" out_port_id="0"/>
+		<IR id="349" name="moments_12/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_12/add" out_port_id="0"/>
+		<IR id="350" name="instancenorm_12/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_12/Rsqrt" out_port_id="0"/>
+		<IR id="351" name="instancenorm_12/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_12/mul" out_port_id="0"/>
+		<IR id="352" name="instancenorm_12/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_12/mul_1" out_port_id="0"/>
+		<IR id="355" name="instancenorm_12/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_12/sub" out_port_id="0"/>
+		<IR id="358" name="instancenorm_12/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_12/add_1" out_port_id="0"/>
+		<IR id="361" name="instancenorm_12/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Add_17" out_port_id="0"/>
+		<IR id="362" name="Add_17" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Pad_13" out_port_id="0"/>
+		<IR id="363" name="MirrorPad_11" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MirrorPad_11" out_port_id="0"/>
+		<IR id="363" name="MirrorPad_11" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_13" out_port_id="0"/>
+		<IR id="365" name="convolution_13/Permute_2310" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_13" out_port_id="0"/>
+		<IR id="365" name="convolution_13/Permute_2310" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_18" out_port_id="0"/>
+		<IR id="369" name="Add_18" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="moments_13/mean" out_port_id="0"/>
+		<IR id="371" name="moments_13/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_13/SquaredDifference" out_port_id="0"/>
+		<IR id="376" name="moments_13/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_13/variance" out_port_id="0"/>
+		<IR id="377" name="moments_13/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_13/add" out_port_id="0"/>
+		<IR id="378" name="instancenorm_13/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_13/Rsqrt" out_port_id="0"/>
+		<IR id="379" name="instancenorm_13/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_13/mul" out_port_id="0"/>
+		<IR id="380" name="instancenorm_13/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_13/mul_1" out_port_id="0"/>
+		<IR id="383" name="instancenorm_13/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_13/sub" out_port_id="0"/>
+		<IR id="386" name="instancenorm_13/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_13/add_1" out_port_id="0"/>
+		<IR id="389" name="instancenorm_13/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Relu_8" out_port_id="0"/>
+		<IR id="390" name="Relu_8" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Pad_14" out_port_id="0"/>
+		<IR id="391" name="MirrorPad_12" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MirrorPad_12" out_port_id="0"/>
+		<IR id="391" name="MirrorPad_12" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_14" out_port_id="0"/>
+		<IR id="393" name="convolution_14/Permute_2246" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_14" out_port_id="0"/>
+		<IR id="393" name="convolution_14/Permute_2246" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_19" out_port_id="0"/>
+		<IR id="397" name="Add_19" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="moments_14/SquaredDifference" out_port_id="0"/>
+		<IR id="404" name="moments_14/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_14/variance" out_port_id="0"/>
+		<IR id="405" name="moments_14/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_14/add" out_port_id="0"/>
+		<IR id="406" name="instancenorm_14/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_14/Rsqrt" out_port_id="0"/>
+		<IR id="407" name="instancenorm_14/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_14/mul" out_port_id="0"/>
+		<IR id="408" name="instancenorm_14/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_14/mul_1" out_port_id="0"/>
+		<IR id="411" name="instancenorm_14/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_14/sub" out_port_id="0"/>
+		<IR id="414" name="instancenorm_14/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_14/add_1" out_port_id="0"/>
+		<IR id="417" name="instancenorm_14/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Add_20" out_port_id="0"/>
+		<IR id="418" name="Add_20" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Pad_15" out_port_id="0"/>
+		<IR id="419" name="MirrorPad_13" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MirrorPad_13" out_port_id="0"/>
+		<IR id="419" name="MirrorPad_13" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_15" out_port_id="0"/>
+		<IR id="421" name="convolution_15/Permute_2270" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_15" out_port_id="0"/>
+		<IR id="421" name="convolution_15/Permute_2270" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_21" out_port_id="0"/>
+		<IR id="425" name="Add_21" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="transpose_47" out_port_id="0"/>
+		<IR id="426" name="transpose_47" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_15/mean" out_port_id="0"/>
+		<IR id="427" name="moments_15/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_15/SquaredDifference" out_port_id="0"/>
+		<IR id="432" name="moments_15/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_15/variance" out_port_id="0"/>
+		<IR id="433" name="moments_15/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_15/add" out_port_id="0"/>
+		<IR id="434" name="instancenorm_15/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_15/Rsqrt" out_port_id="0"/>
+		<IR id="435" name="instancenorm_15/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_15/mul" out_port_id="0"/>
+		<IR id="436" name="instancenorm_15/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_15/sub" out_port_id="0"/>
+		<IR id="442" name="instancenorm_15/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_15/add_1" out_port_id="0"/>
+		<IR id="445" name="instancenorm_15/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Relu_9" out_port_id="0"/>
+		<IR id="446" name="Relu_9" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_16" out_port_id="0"/>
+		<IR id="449" name="convolution_16/Permute_2306" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_16" out_port_id="0"/>
+		<IR id="449" name="convolution_16/Permute_2306" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_22" out_port_id="0"/>
+		<IR id="453" name="Add_22" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="moments_16/mean" out_port_id="0"/>
+		<IR id="455" name="moments_16/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_16/SquaredDifference" out_port_id="0"/>
+		<IR id="460" name="moments_16/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_16/variance" out_port_id="0"/>
+		<IR id="461" name="moments_16/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_16/add" out_port_id="0"/>
+		<IR id="462" name="instancenorm_16/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_16/Rsqrt" out_port_id="0"/>
+		<IR id="463" name="instancenorm_16/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_16/mul" out_port_id="0"/>
+		<IR id="464" name="instancenorm_16/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_16/mul_1" out_port_id="0"/>
+		<IR id="467" name="instancenorm_16/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_16/sub" out_port_id="0"/>
+		<IR id="470" name="instancenorm_16/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_16/add_1" out_port_id="0"/>
+		<IR id="473" name="instancenorm_16/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Add_23" out_port_id="0"/>
+		<IR id="474" name="Add_23" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Pad_17" out_port_id="0"/>
+		<IR id="475" name="MirrorPad_15" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MirrorPad_15" out_port_id="0"/>
+		<IR id="475" name="MirrorPad_15" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_17" out_port_id="0"/>
+		<IR id="477" name="convolution_17/Permute_2250" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_17" out_port_id="0"/>
+		<IR id="477" name="convolution_17/Permute_2250" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_24" out_port_id="0"/>
+		<IR id="481" name="Add_24" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="moments_17/mean" out_port_id="0"/>
+		<IR id="483" name="moments_17/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_17/SquaredDifference" out_port_id="0"/>
+		<IR id="488" name="moments_17/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_17/variance" out_port_id="0"/>
+		<IR id="489" name="moments_17/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_17/add" out_port_id="0"/>
+		<IR id="490" name="instancenorm_17/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_17/Rsqrt" out_port_id="0"/>
+		<IR id="491" name="instancenorm_17/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_17/mul" out_port_id="0"/>
+		<IR id="492" name="instancenorm_17/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_17/mul_1" out_port_id="0"/>
+		<IR id="495" name="instancenorm_17/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_17/sub" out_port_id="0"/>
+		<IR id="498" name="instancenorm_17/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_17/add_1" out_port_id="0"/>
+		<IR id="501" name="instancenorm_17/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Relu_10" out_port_id="0"/>
+		<IR id="502" name="Relu_10" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Pad_18" out_port_id="0"/>
+		<IR id="503" name="MirrorPad_16" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MirrorPad_16" out_port_id="0"/>
+		<IR id="503" name="MirrorPad_16" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_18" out_port_id="0"/>
+		<IR id="505" name="convolution_18/Permute_2258" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_18" out_port_id="0"/>
+		<IR id="505" name="convolution_18/Permute_2258" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_25" out_port_id="0"/>
+		<IR id="509" name="Add_25" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="moments_18/mean" out_port_id="0"/>
+		<IR id="511" name="moments_18/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_18/SquaredDifference" out_port_id="0"/>
+		<IR id="516" name="moments_18/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_18/add" out_port_id="0"/>
+		<IR id="518" name="instancenorm_18/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_18/Rsqrt" out_port_id="0"/>
+		<IR id="519" name="instancenorm_18/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_18/mul" out_port_id="0"/>
+		<IR id="520" name="instancenorm_18/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_18/mul_1" out_port_id="0"/>
+		<IR id="523" name="instancenorm_18/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_18/sub" out_port_id="0"/>
+		<IR id="526" name="instancenorm_18/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_18/add_1" out_port_id="0"/>
+		<IR id="529" name="instancenorm_18/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Add_26" out_port_id="0"/>
+		<IR id="530" name="Add_26" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Pad_19" out_port_id="0"/>
+		<IR id="531" name="MirrorPad_17" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MirrorPad_17" out_port_id="0"/>
+		<IR id="531" name="MirrorPad_17" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_19" out_port_id="0"/>
+		<IR id="533" name="convolution_19/Permute_2278" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_19" out_port_id="0"/>
+		<IR id="533" name="convolution_19/Permute_2278" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_27" out_port_id="0"/>
+		<IR id="537" name="Add_27" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="moments_19/mean" out_port_id="0"/>
+		<IR id="539" name="moments_19/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_19/SquaredDifference" out_port_id="0"/>
+		<IR id="544" name="moments_19/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_19/variance" out_port_id="0"/>
+		<IR id="545" name="moments_19/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_19/Rsqrt" out_port_id="0"/>
+		<IR id="547" name="instancenorm_19/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_19/mul" out_port_id="0"/>
+		<IR id="548" name="instancenorm_19/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_19/mul_1" out_port_id="0"/>
+		<IR id="551" name="instancenorm_19/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_19/sub" out_port_id="0"/>
+		<IR id="554" name="instancenorm_19/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_19/add_1" out_port_id="0"/>
+		<IR id="557" name="instancenorm_19/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Relu_11" out_port_id="0"/>
+		<IR id="558" name="Relu_11" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_20" out_port_id="0"/>
+		<IR id="561" name="convolution_20/Permute_2326" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_20" out_port_id="0"/>
+		<IR id="561" name="convolution_20/Permute_2326" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="transpose_62" out_port_id="0"/>
+		<IR id="566" name="transpose_62" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_20/mean" out_port_id="0"/>
+		<IR id="567" name="moments_20/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_20/SquaredDifference" out_port_id="0"/>
+		<IR id="572" name="moments_20/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_20/variance" out_port_id="0"/>
+		<IR id="573" name="moments_20/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_20/Rsqrt" out_port_id="0"/>
+		<IR id="575" name="instancenorm_20/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_20/mul" out_port_id="0"/>
+		<IR id="576" name="instancenorm_20/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_20/mul_1" out_port_id="0"/>
+		<IR id="579" name="instancenorm_20/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_20/add_1" out_port_id="0"/>
+		<IR id="585" name="instancenorm_20/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Add_29" out_port_id="0"/>
+		<IR id="586" name="Add_29" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv2d_transpose" out_port_id="0"/>
+		<IR id="588" name="conv2d_transpose/Permute_2294" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Pad_21" out_port_id="0"/>
+		<IR id="589" name="Pad_21" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_21" out_port_id="0"/>
+		<IR id="590" name="2328" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Slice" out_port_id="0"/>
+		<IR id="590" name="2328" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_30" out_port_id="0"/>
+		<IR id="594" name="Add_30" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="transpose_65" out_port_id="0"/>
+		<IR id="595" name="transpose_65" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_21/mean" out_port_id="0"/>
+		<IR id="596" name="moments_21/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_21/SquaredDifference" out_port_id="0"/>
+		<IR id="601" name="moments_21/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_21/variance" out_port_id="0"/>
+		<IR id="602" name="moments_21/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_21/add" out_port_id="0"/>
+		<IR id="603" name="instancenorm_21/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_21/Rsqrt" out_port_id="0"/>
+		<IR id="604" name="instancenorm_21/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_21/mul" out_port_id="0"/>
+		<IR id="605" name="instancenorm_21/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_21/mul_1" out_port_id="0"/>
+		<IR id="608" name="instancenorm_21/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_21/sub" out_port_id="0"/>
+		<IR id="611" name="instancenorm_21/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_21/add_1" out_port_id="0"/>
+		<IR id="614" name="instancenorm_21/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Relu_12" out_port_id="0"/>
+		<IR id="615" name="Relu_12" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv2d_transpose_1" out_port_id="0"/>
+		<IR id="617" name="conv2d_transpose_1/Permute_2302" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Pad_22" out_port_id="0"/>
+		<IR id="618" name="Pad_22" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_22" out_port_id="0"/>
+		<IR id="619" name="2327" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Slice_1" out_port_id="0"/>
+		<IR id="619" name="2327" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_31" out_port_id="0"/>
+		<IR id="623" name="Add_31" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="moments_22/mean" out_port_id="0"/>
+		<IR id="625" name="moments_22/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_22/SquaredDifference" out_port_id="0"/>
+		<IR id="630" name="moments_22/SquaredDifference/squared_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_22/variance" out_port_id="0"/>
+		<IR id="631" name="moments_22/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_22/Rsqrt" out_port_id="0"/>
+		<IR id="633" name="instancenorm_22/Rsqrt" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_22/mul" out_port_id="0"/>
+		<IR id="634" name="instancenorm_22/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_22/mul_1" out_port_id="0"/>
+		<IR id="637" name="instancenorm_22/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_22/sub" out_port_id="0"/>
+		<IR id="640" name="instancenorm_22/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="instancenorm_22/add_1" out_port_id="0"/>
+		<IR id="643" name="instancenorm_22/add_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Relu_13" out_port_id="0"/>
+		<IR id="644" name="Relu_13" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Pad_23" out_port_id="0"/>
+		<IR id="645" name="MirrorPad_19" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MirrorPad_19" out_port_id="0"/>
+		<IR id="645" name="MirrorPad_19" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concat_23" out_port_id="0"/>
+		<IR id="647" name="convolution_21/Permute_2314" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convolution_21" out_port_id="0"/>
+		<IR id="647" name="convolution_21/Permute_2314" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_32" out_port_id="0"/>
+		<IR id="651" name="Add_32" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="transpose_71" out_port_id="0"/>
+		<IR id="652" name="transpose_71" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_9/mul" out_port_id="0"/>
+		<IR id="268" name="instancenorm_9/mul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="Pad_11" out_port_id="0"/>
+		<IR id="307" name="MirrorPad_9" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MirrorPad_9" out_port_id="0"/>
+		<IR id="307" name="MirrorPad_9" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Pad_12" out_port_id="0"/>
+		<IR id="335" name="MirrorPad_10" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MirrorPad_10" out_port_id="0"/>
+		<IR id="335" name="MirrorPad_10" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_14/mean" out_port_id="0"/>
+		<IR id="399" name="moments_14/mean" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_15/mul_1" out_port_id="0"/>
+		<IR id="439" name="instancenorm_15/mul_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Pad_16" out_port_id="0"/>
+		<IR id="447" name="MirrorPad_14" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MirrorPad_14" out_port_id="0"/>
+		<IR id="447" name="MirrorPad_14" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="moments_18/variance" out_port_id="0"/>
+		<IR id="517" name="moments_18/variance" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_19/add" out_port_id="0"/>
+		<IR id="546" name="instancenorm_19/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Pad_20" out_port_id="0"/>
+		<IR id="559" name="MirrorPad_18" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MirrorPad_18" out_port_id="0"/>
+		<IR id="559" name="MirrorPad_18" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_28" out_port_id="0"/>
+		<IR id="565" name="Add_28" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="instancenorm_20/add" out_port_id="0"/>
+		<IR id="574" name="instancenorm_20/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_20/sub" out_port_id="0"/>
+		<IR id="582" name="instancenorm_20/sub/add_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="transpose_32" out_port_id="0"/>
+		<IR id="286" name="transpose_32" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="instancenorm_22/add" out_port_id="0"/>
+		<IR id="632" name="instancenorm_22/add" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Tanh" out_port_id="0"/>
+		<IR id="653" name="Tanh" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Add_6" out_port_id="0"/>
+		<IR id="145" name="Add_6" out_port_id="2"/>
+	</map>
+</mapping>

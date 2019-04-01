@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  	<title>DaDA</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="image s/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png"/>
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/libs/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/libs/p5.js"></script>
+    <script type="text/javascript" src="js/libs/p5.dom.js"></script>
+    <script type="text/javascript" src="js/sketcher.js"></script>
+    <script src="js/socket.io-client/socket.io.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/client.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div id = "sidebar">
+    <div id = "title" class = "left">达达山水</div>
+    <div id = "dada" class = "left">DaDA</div>
+    <div id = "subtitle" class = "left">Design and Draw with AI</div>
+    <div id = "scroll" class = "left"><img class = "scroll_img" src = "images/6shanshui.png"></div>
+    <div id = "scroll" class = "left"><img class = "scroll_img" src = "images/6results.png"></div>
+    <div id = "scroll" class = "left"><img class = "scroll_img" src = "images/long_scroll_1920.jpg"></div>
+
+    <!-- <div id = "description" class = "left">
+      “达达” (DaDA, Design and Draw with AI) is an interactive installation based on artificial intelligence. When participants scribble lines, the AI will help to create a nature painting or Chinese Shanshui (Chinese traditional ink wash landscape painting); If the participants doodle some colored blocks, the AI will assist to generate design, such as architecture, urban design , etc. After the AI has assisted human in drawing or designing, the artwork created by human (and AI) can also be feed back to train the AI system and explore more.
+    </div> -->
+
+    <div id="nav" class = "left"></div>
+    <div id="controls" class = "left">
+      <!-- <a class="btn" id="undo" href="#" onclick="javascript:sketcher.clearLast()">Undo</a> -->
+      <!-- <a class="btn" href="#" onclick="javascript:requestData()">Debug</a> -->
+      <a class="btn" id="reload" href="#" onClick="window.location.reload()">Clear</a>
+      <a class="btn" id="make" href="#result" onclick="javascript:sendData()">DaDA!</a>
+      <a class="btn" id="checkbox" href="#" onclick="javascript:requestData()"></a>
+      <input value="Your Email for Receiving Shanshui" id="emailAddress" class="btn" >
+    </div>
+  </div>
+
+  <div id = "drawzone">
+    <div id="draw" class = "right"></div>
+    <div id="result" class = "right"><img id="results_image"></div>
+  </div>
+
+  <!-- <div id = "gallery">
+    <img id="results_collections" src = "">
+  </div> -->
+</body>
+</html>
