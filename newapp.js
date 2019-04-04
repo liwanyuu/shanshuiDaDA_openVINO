@@ -7,7 +7,7 @@ var sys = require('sys')
 var exec = require('child_process').exec;
 var timestamp;
 
-var drawPath = "datasets/Sketch2Shanshui/input/draw.jpg";
+var drawPath = "draw.jpg";
 var renderPath = "result.jpg";
 
     

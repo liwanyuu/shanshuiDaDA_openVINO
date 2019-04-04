@@ -29,7 +29,7 @@ def build_argparser():
     parser = ArgumentParser()
     parser.add_argument("-m", "--model", help="Path to an .xml file with a trained model.", type=str, default="pretrained-models/onnx_fp32/latest_net_G.xml")
     parser.add_argument("-i", "--input", help="Path to a folder with images or path to an image files", 
-                        type=str, nargs='+', default="datasets/Sketch2Shanshui/input/draw.jpg")
+                        type=str, default="draw.jpg")
     parser.add_argument("-l", "--cpu_extension",
                         help="MKLDNN (CPU)-targeted custom layers.Absolute path to a shared library with the kernels "
                              "impl.", type=str, default="/opt/intel/openvino_2019.1.090/inference_engine/lib/intel64/libcpu_extension.dylib")
@@ -86,13 +86,12 @@ def main():
     # Read and pre-process input images
     n, c, h, w = net.inputs['input.1'].shape
     images = np.ndarray(shape=(n, c, h, w))
-    for i in range(n):
-        image = cv2.imread(args.input[i])
-        if image.shape[:-1] != (h, w):
-            log.warning("Image {} is resized from {} to {}".format(args.input[i], image.shape[:-1], (h, w)))
-            image = cv2.resize(image, (w, h))
-        image = image.transpose((2, 0, 1))  # Change data layout from HWC to CHW
-        images[i] = image
+    image = cv2.imread(args.input)
+    if image.shape[:-1] != (h, w):
+        log.warning("Image {} is resized from {} to {}".format(args.input, image.shape[:-1], (h, w)))
+        image = cv2.resize(image, (w, h))
+    image = image.transpose((2, 0, 1))  # Change data layout from HWC to CHW
+    images[0] = image
     log.info("Batch size is {}".format(n))
 
     # Loading model to the plugin
@@ -124,7 +123,7 @@ def main():
     img_bgr = cv2.merge([b,g,r])
     img = cv2.normalize(img_bgr, None, alpha = 0, beta = 255, norm_type = cv2.NORM_MINMAX, dtype = cv2.CV_32F)
     img.astype(np.uint8)
-    cv2.imwrite('result.png', img)
+    cv2.imwrite('result.jpg', img)
     # img_show = cv2.normalize(img_bgr, None, alpha = 0, beta = 1, norm_type = cv2.NORM_MINMAX, dtype = cv2.CV_32F)
     # cv2.imshow('show', img_show)
     # cv2.waitKey(0)
