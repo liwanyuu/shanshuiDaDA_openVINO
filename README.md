@@ -19,4 +19,4 @@ cd shanshuiDadA_pth
 node newapp.js
 ```
 * Open [localhost:8000](http://localhost:8000/) in your browser
-* OR (Suggested!) Use ** a touch screen device eg.Tablet, Smart Phone etc.** to load the url and draw SHANSHUI from there. 
+* OR (Suggested!) Use **a touch screen device eg.Tablet, Smart Phone etc.** to load the url and draw SHANSHUI from there. 
