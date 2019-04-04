@@ -26,5 +26,5 @@ node newapp.js
 * OR (Suggested!) Use **a touch screen device eg.Tablet, Smart Phone etc.** to load the url and draw SHANSHUI from there. 
 
 * The model was trained with pytorch and converted to onnx then inference with openVINO
-    * More on how ShanshuiDaDA project on (my page)[https://www.aven.cc/Shanshui-DaDA.html] and (this repo)[https://github.com/aaaven/ShanshuiDaDA_pth]
-    * More on how to convert/inference pytorch pretrained model with openVINO can be find (here)[https://github.com/aaaven/shanshuiDaDA_openVINO_modelONLY]
+    * More on how ShanshuiDaDA project on [my page](https://www.aven.cc/Shanshui-DaDA.html] and (this repo)[https://github.com/aaaven/ShanshuiDaDA_pth)
+    * More on how to convert/inference pytorch pretrained model with openVINO can be find [here](https://github.com/aaaven/shanshuiDaDA_openVINO_modelONLY)

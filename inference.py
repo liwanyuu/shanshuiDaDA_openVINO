@@ -48,6 +48,7 @@ def build_argparser():
 
 
 def main():
+    infer_time = []
     log.basicConfig(format="[ %(levelname)s ] %(message)s", level=log.INFO, stream=sys.stdout)
     args = build_argparser().parse_args()
     model_xml = args.model
@@ -101,7 +102,6 @@ def main():
 
     # Start sync inference
     log.info("Starting inference ({} iterations)".format(args.number_iter))
-    infer_time = []
     for i in range(args.number_iter):
         t0 = time()
         #res = exec_net.infer(inputs={input_blob: images})
