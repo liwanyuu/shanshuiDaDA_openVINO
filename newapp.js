@@ -8,7 +8,7 @@ var exec = require('child_process').exec;
 var timestamp;
 
 var drawPath = "datasets/Sketch2Shanshui/input/draw.jpg";
-var renderPath = "results/Sketch2Shanshui/test_latest/images/draw_fake_B.png";
+var renderPath = "result.jpg";
 
     
 io.on('connection', function (socket) {
@@ -25,7 +25,7 @@ io.on('connection', function (socket) {
  
   socket.on('sendData', function (data) { 
     timestamp = new Date().getTime();
-    var cmd_generate = "bash inference.sh"; 
+    var cmd_generate = "sh inference.sh"; 
     var cmd_copyDrawing = "cp "+drawPath+" "+__dirname+"/public/gallery/drawing/d"+timestamp+".jpg";
     var cmd_copyRender  = "cp "+renderPath+" "+__dirname+"/public/gallery/render/r"+timestamp+".jpg";
     var imgFile = data.image.replace(/^data:image\/png;base64,/, "");
@@ -35,8 +35,9 @@ io.on('connection', function (socket) {
       exec(cmd_generate, function (error, stdout, stderr) {
         console.log("generated image");
         exec(cmd_copyDrawing, function (error, stdout, stderr) {
+          console.log("copied sketch image to public")
           exec(cmd_copyRender, function (error, stdout, stderr) {
-            console.log("copied images to public")
+            console.log("copied render image to public")
             socket.emit('newImageGenerated', {timestamp:timestamp}); 
           });
         });

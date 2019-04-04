@@ -1,3 +1,2 @@
-#change path in your environment
-python inference.py -m "pretrained-models/onnx_fp32/latest_net_G_FP32.xml" -i "datasets/Sketch2Shanshui/input/draw.jpg" -d "CPU"
-
+source /opt/intel/openvino/bin/setupvars.sh
+python3 ./reinference.py
