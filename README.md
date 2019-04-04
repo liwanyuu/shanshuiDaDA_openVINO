@@ -1,4 +1,4 @@
-* This code has been tested with openVINO on mac version openvino_2019.1.090, (install guide)[https://docs.openvinotoolkit.org/latest/_docs_install_guides_installing_openvino_macos.html] here.
+* This code has been tested with openVINO on mac version openvino_2019.1.090, [install guide](https://docs.openvinotoolkit.org/latest/_docs_install_guides_installing_openvino_macos.html) here.
 
 * Install OpenVINO
     * Overview: https://software.intel.com/en-us/openvino-toolkit
